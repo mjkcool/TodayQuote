@@ -5,13 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".QuoteMainActivity" >
+    android:padding="10dp"
+    tools:context=".QuoteMainActivity">
 
     <TextView
         android:id="@+id/Quote"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
         android:gravity="center"
         android:text="TextView"
         android:textSize="24sp" />
@@ -20,7 +22,7 @@
         android:id="@+id/Person"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_marginBottom="20dp"
         android:gravity="right"
         android:text="TextView"
         android:textSize="14sp" />

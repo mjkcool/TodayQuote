@@ -10,6 +10,7 @@ class QuoteMainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.quote_main_activity)
+
         var quoteText = findViewById<TextView>(R.id.Quote)
         var quoteFrom = findViewById<TextView>(R.id.Person)
 
