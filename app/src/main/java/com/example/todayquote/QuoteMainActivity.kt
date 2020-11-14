@@ -1,9 +1,11 @@
 package com.example.todayquote
 
 import android.content.Context
+import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import kotlin.random.Random
 
@@ -51,6 +53,15 @@ class QuoteMainActivity : AppCompatActivity() {
         }else{
             quoteText.text = "저장된 명언이 없습니다."
             quoteFrom.text = ""
+        }
+
+        var toQuoteListBtn = findViewById<Button>(R.id.quote_list_btn)
+
+        toQuoteListBtn.setOnClickListener {
+            val intent = Intent (this, QuoteListActivity::class.java)
+            //직렬화된 객체 전달 가능(Parcelable 인터페이스 구현)
+            intent.putExtra("data", 100)
+            startActivity(intent)
         }
 
         //[정리] 코틀린은 인스턴스 생성시 new 식별자가 필요없음.
