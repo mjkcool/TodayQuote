@@ -60,7 +60,7 @@ class QuoteMainActivity : AppCompatActivity() {
         toQuoteListBtn.setOnClickListener {
             val intent = Intent (this, QuoteListActivity::class.java)
             //직렬화된 객체 전달 가능(Parcelable 인터페이스 구현)
-            intent.putExtra("data", 100)
+            intent.putExtra("quote_size", quotes.size)
             startActivity(intent)
         }
 
