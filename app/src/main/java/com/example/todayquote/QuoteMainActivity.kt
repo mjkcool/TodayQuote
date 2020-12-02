@@ -64,6 +64,12 @@ class QuoteMainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val toQuoteEditBtn = findViewById<Button>(R.id.quote_edit_btn)
+        toQuoteEditBtn.setOnClickListener {
+            val intent = Intent(this, QuoteEditActivity::class.java)
+            startActivity(intent)
+        }
+
         //[정리] 코틀린은 인스턴스 생성시 new 식별자가 필요없음.
 //        var quotes = mutableListOf<Quote>()
 //        quotes.add(Quote(1, "명언 내용 1", "출처 1"))

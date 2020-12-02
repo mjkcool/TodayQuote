@@ -7,7 +7,7 @@ import android.content.SharedPreferences
 - 데이터(정적 속성)을 위주로 하는 클래스: 메서드 잘 사용X
 ex) data class Person(var name:String, var age:Int)
 */
-data class Quote(var idx:Int, var text:String, val from:String){
+data class Quote(var idx:Int, var text:String, var from:String){
     companion object { //클래스 메서드
 
         fun saveToPreference(
