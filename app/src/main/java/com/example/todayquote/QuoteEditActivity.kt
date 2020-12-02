@@ -27,8 +27,6 @@ class QuoteEditActivity : AppCompatActivity() {
         val recyclerView = findViewById<RecyclerView>(R.id.quote_edit_list)
         recyclerView.setHasFixedSize(false);
         recyclerView.layoutManager = LinearLayoutManager(this)
-
-        val adapter = QuoteEditAdapter(quotes)
-        recyclerView.adapter = adapter
+        recyclerView.adapter =  QuoteEditAdapter(quotes)
     }
 }
